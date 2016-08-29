@@ -13,6 +13,7 @@ public class HttpModel {
     public static  String HOTBANNER=HOST+"hotbrand.php";
     public static  String ALLBANNER=HOST+"allbrand.php";
     public static  String FLLOW=HOST+"follow.php";
+    public static String  RECOMMEND=HOST+"recommend.php";
 
 
 }

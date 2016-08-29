@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MyYoHo</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <item name="head" type="id"></item>
+    <item name="foot" type="id"></item>
     <array name="arr">
         <item>MyYoHo</item>
         <item>MyYoHo</item>

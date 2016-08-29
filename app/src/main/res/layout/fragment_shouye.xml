@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include layout="@layout/toobar_home"
         android:id="@+id/toobar_home"
         ></include>
-    <ListView
-        android:id="@+id/lv"
-        android:layout_below="@+id/toobar_home"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
-
-
-</RelativeLayout>
+<com.example.chenyunpeng.myyoho.view.PullAndREflashListView
+   android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</com.example.chenyunpeng.myyoho.view.PullAndREflashListView>
+    </LinearLayout>
