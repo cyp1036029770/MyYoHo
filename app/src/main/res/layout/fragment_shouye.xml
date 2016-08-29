@@ -5,12 +5,11 @@
     <include layout="@layout/toobar_home"
         android:id="@+id/toobar_home"
         ></include>
-    <LinearLayout
+    <ListView
+        android:id="@+id/lv"
         android:layout_below="@+id/toobar_home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </LinearLayout>
+        android:layout_height="match_parent"></ListView>
 
 
 </RelativeLayout>

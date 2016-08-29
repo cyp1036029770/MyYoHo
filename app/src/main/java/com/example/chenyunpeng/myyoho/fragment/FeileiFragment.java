@@ -46,7 +46,7 @@ public class FeileiFragment extends BaseFragment {
         fragmentList = new ArrayList<>();
         fragmentList.add(new PinLeiFragment());
         fragmentList.add(new PinpaiFragment());
-        fragmentList.add(new PinLeiFragment());
+        fragmentList.add(new GuanzhuFragment());
         FragmentManager manager = getFragmentManager();
         FeileiPagerAdapter adapter = new FeileiPagerAdapter(manager, titleList, fragmentList);
         viewpagerFeilei.setAdapter(adapter);
