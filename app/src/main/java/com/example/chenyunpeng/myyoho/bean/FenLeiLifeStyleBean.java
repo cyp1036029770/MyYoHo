@@ -10,17 +10,17 @@ public class FenLeiLifeStyleBean {
 
     /**
      * sucessfully : ok
-     * girl : [{"_id":"10","name":"裙装","SexId":"0"},{"_id":"11","name":"创意生活","SexId":"0"},{"_id":"12","name":"上衣","SexId":"0"},{"_id":"13","name":"裤子","SexId":"0"},{"_id":"14","name":"鞋子","SexId":"0"},{"_id":"15","name":"配置","SexId":"0"},{"_id":"16","name":"包类","SexId":"0"},{"_id":"17","name":"内衣家居服","SexId":"0"},{"_id":"18","name":"创意生活","SexId":"0"},{"_id":"19","name":"泳衣","SexId":"0"},{"_id":"20","name":"潮童","SexId":"0"}]
+     * life : [{"_id":"21","name":"数码3c","SexId":"2"},{"_id":"22","name":"居家","SexId":"2"},{"_id":"23","name":"玩具娱乐","SexId":"2"},{"_id":"24","name":"文件","SexId":"2"},{"_id":"25","name":"美妆","SexId":"2"}]
      */
 
     private String sucessfully;
     /**
-     * _id : 10
-     * name : 裙装
-     * SexId : 0
+     * _id : 21
+     * name : 数码3c
+     * SexId : 2
      */
 
-    private List<GirlBean> girl;
+    private List<LifeBean> life;
 
     public String getSucessfully() {
         return sucessfully;
@@ -30,15 +30,15 @@ public class FenLeiLifeStyleBean {
         this.sucessfully = sucessfully;
     }
 
-    public List<GirlBean> getGirl() {
-        return girl;
+    public List<LifeBean> getLife() {
+        return life;
     }
 
-    public void setGirl(List<GirlBean> girl) {
-        this.girl = girl;
+    public void setLife(List<LifeBean> life) {
+        this.life = life;
     }
 
-    public static class GirlBean {
+    public static class LifeBean {
         private String _id;
         private String name;
         private String SexId;

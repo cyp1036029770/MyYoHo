@@ -7,19 +7,20 @@ import java.util.List;
  */
 public class FenLeiGirlBean {
 
+
     /**
      * sucessfully : ok
-     * boy : [{"_id":"1","name":"上衣","SexId":"1"},{"_id":"2","name":"裤子","SexId":"1"},{"_id":"3","name":"鞋子","SexId":"1"},{"_id":"4","name":"配饰","SexId":"1"},{"_id":"5","name":"包类","SexId":"1"},{"_id":"6","name":"内衣家居服","SexId":"1"},{"_id":"7","name":"创意生活","SexId":"1"},{"_id":"8","name":"泳衣","SexId":"1"},{"_id":"9","name":"潮童","SexId":"1"}]
+     * girl : [{"_id":"10","name":"裙装","SexId":"0"},{"_id":"11","name":"创意生活","SexId":"0"},{"_id":"12","name":"上衣","SexId":"0"},{"_id":"13","name":"裤子","SexId":"0"},{"_id":"14","name":"鞋子","SexId":"0"},{"_id":"15","name":"配置","SexId":"0"},{"_id":"16","name":"包类","SexId":"0"},{"_id":"17","name":"内衣家居服","SexId":"0"},{"_id":"18","name":"创意生活","SexId":"0"},{"_id":"19","name":"泳衣","SexId":"0"},{"_id":"20","name":"潮童","SexId":"0"}]
      */
 
     private String sucessfully;
     /**
-     * _id : 1
-     * name : 上衣
-     * SexId : 1
+     * _id : 10
+     * name : 裙装
+     * SexId : 0
      */
 
-    private List<BoyBean> boy;
+    private List<GirlBean> girl;
 
     public String getSucessfully() {
         return sucessfully;
@@ -29,15 +30,15 @@ public class FenLeiGirlBean {
         this.sucessfully = sucessfully;
     }
 
-    public List<BoyBean> getBoy() {
-        return boy;
+    public List<GirlBean> getGirl() {
+        return girl;
     }
 
-    public void setBoy(List<BoyBean> boy) {
-        this.boy = boy;
+    public void setGirl(List<GirlBean> girl) {
+        this.girl = girl;
     }
 
-    public static class BoyBean {
+    public static class GirlBean {
         private String _id;
         private String name;
         private String SexId;

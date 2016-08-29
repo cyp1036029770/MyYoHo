@@ -31,11 +31,11 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_delay);
+        setContentView(R.layout.activity_welecome);
         ButterKnife.bind(this);
-        SPutils.save("isFirst","true");
         delayImage.setScaleY(1.5f);
         delayImage.setScaleX(1.5f);
+        start.setPressed(false);
         init();
     }
 
@@ -57,7 +57,7 @@ public class WelcomeActivity extends AppCompatActivity {
                     @Override
                     public void onAnimationEnd(Animation animation) {
                       delayImage2.clearAnimation();
-                        delayImage.setVisibility(View.GONE);
+                        delayImage2.setVisibility(View.GONE);
                         animator.start();
                     }
 
@@ -104,12 +104,19 @@ public class WelcomeActivity extends AppCompatActivity {
 
                     }
                 });
+                delayImage2.setAnimation(alphaAnimation);
             }
         });
+
     }
 
     @OnClick(R.id.start)
     public void onClick() {
         //启动Activity
+        delayImage2.clearAnimation();
+        animator.removeAllListeners();
+        startActivity(new Intent(WelcomeActivity.this,ChooseActivity.class));
+        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+        finish();
     }
 }
